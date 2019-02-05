@@ -21,6 +21,12 @@ class Student(Human):
     def Eat(self):
         print("student eating")
 
-mystd=Student()
+# another class inheritance from student
+class Instructor(Student):
+    def __init__(self):
+        Student.__init__(self)
+        print("Instructor is created")
+
+mystd=x()
 mystd.Study()
 mystd.Eat()
